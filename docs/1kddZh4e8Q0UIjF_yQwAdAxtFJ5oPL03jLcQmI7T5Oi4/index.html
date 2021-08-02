@@ -52,20 +52,28 @@
                 
                 
                 
-                  <p class="intro">Website scraping (Python, BeautifulSoup). Financial APIs (IEX Cloud). Datawrapper.</p>
+                  <p class="intro">Skills: Website scraping (Python, BeautifulSoup). Financial APIs (IEX Cloud). Datawrapper.</p>
                 
                 
                     <div class="sub-font body-text">
-                        <p>Imagine a company where employees enjoy coming to work. When they arrive, they find customers lined up, excited to get in the door. Isn't that a company you would expect to grow and prosper?</p>
-<p>There are such companies. The opposite exists as well - where employees suffer through the day, and resentful customers go in only when they have to.</p>
-<p>How to tell which is which? Go to the firms that make it their business to ask - places that survey employees ( <a href='https://www.google.com/url?q=https://www.glassdoor.com&sa=D&source=editors&ust=1627882253725000&usg=AOvVaw2f7qh3MXdrD_-7ZEhanLzc'>Glassdoor</a> ,   <a href='https://www.google.com/url?q=https://www.comparably.com&sa=D&source=editors&ust=1627882253725000&usg=AOvVaw2FnJhwbXBhvSwMvm9ryTVE'>Comparably</a>  and  <a href='https://www.google.com/url?q=https://www.careerbliss.com/&sa=D&source=editors&ust=1627882253725000&usg=AOvVaw0ReRQ6F5ugIf_dTY2GXeCQ'>CareerBliss</a> ) . Check out sites that survey customers as well. To tell which companies are thriving, look at standard financial metrics like revenue and profit growth.</p>
+                        <p>I wanted to investigate the correlation between employee and customer satisfaction and see whether companies that score well on both grow faster.</p>
+<p>To find out, I built a scatterplot and created a 2x2 plotting employee satisfaction against customer satisfaction.</p>
+<ul>
+<li>Employee ratings came from </li>
+</ul>
+<p><a href='https://www.google.com/url?q=https://www.glassdoor.com/&sa=D&source=editors&ust=1627885348676000&usg=AOvVaw03RQ-uK0AF92nlUP5QuVRd'>Glassdoor</a></p>
+<p>using a scraper built with Python’s BeautifulSoup library. Customer ratings came from the </p>
+<p><a href='https://www.google.com/url?q=http://theasci.org&sa=D&source=editors&ust=1627885348677000&usg=AOvVaw2L-2u3Wd8vwkvuX6Z7Rp3q'>American Customer Satisfaction Index</a></p>
+<p>.  To see how fast the companies were growing, I sized them using 3-year revenue growth figures pulled from the </p>
+<p><a href='https://www.google.com/url?q=https://iexcloud.io/&sa=D&source=editors&ust=1627885348677000&usg=AOvVaw0eJriXhr1-Gb3DZN3ylsra'>IEX Cloud</a></p>
+<p>financial data API, using a script written in Python.</p>
 <iframe aria-label="chart" frameborder="0" height="431" id="datawrapper-chart-qSZmI" scrolling="no" src="https://datawrapper.dwcdn.net/qSZmI/1/" style="width: 0; min-width: 100% !important; border: none;" title="A DataWrapper chart">
 
 </iframe>
 
 <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
 
-<p>The example above shows supermarkets. I’ve done charts for sectors ranging from fast food to package delivery (US Post Office, anyone?). All tell a similar story - but which companies are most loved, least loved and getting the biggest financial payoffs is often a surprise.</p>
+<p>The example above shows supermarkets. I’ve done charts for sectors ranging from fast food to package delivery (US Post Office, anyone?). All tell a similar story. But which companies are most loved, least loved and getting the biggest financial payoffs is often a surprise.</p>
                         
                           <p>Code for this story can be found at <a href="http://github.com/fuertebrazos/EX-CX">http://github.com/fuertebrazos/EX-CX</a></a></p>
                         
